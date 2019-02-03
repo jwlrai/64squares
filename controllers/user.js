@@ -125,7 +125,7 @@ router.post('/islogin',function(req,res){
 });
 router.get('/matchhistory',function(req,res){
     if(res.locals.user.login ){
-        console.log(res.locals.user)
+     
         user.matchHistory(res.locals.user.data.userid,function(err,data){
             res.json(data)
         })
@@ -133,26 +133,5 @@ router.get('/matchhistory',function(req,res){
         return res.status(400);
     }
 });
-// router.get('/user/details',function(req,res){
-//     if(res.locals.user.login ){
-//         console.log(res.locals.user)
-//         user.matchHistory(res.locals.user.data.userid,function(err,data){
-//             let wins = 0; let lose = 0;
-//             for(let i=0; i < data.length; i++){
-//                 if(data[i].win==='win'){
-//                     win++;
-//                 }else{
-//                     lose++;
-//                 }
-//             }
-//             res.json({
-//                 name:req.locals.user.data.name,
-//                 win:win,
-//                 game:data.length
-//             })
-//         })
-//     }else{
-//         return res.status(400);
-//     }
-// });
+
 module.exports = router;

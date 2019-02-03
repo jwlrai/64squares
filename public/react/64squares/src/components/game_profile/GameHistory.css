@@ -1,0 +1,9 @@
+.gamehis{
+    border:1px solid #d1d1d1;
+    padding:14px 10px;
+    min-height: 70vh;
+    
+}
+.table>tbody>tr>td{
+    /* border-top:none; */
+}

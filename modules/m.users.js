@@ -35,7 +35,7 @@ module.exports ={
                                     if(err){
                                         cb("error",null);
                                     }else{
-                                        console.log(sdata)
+                                      
                                         cb(false,auth.genToken(sdata._id));
                                     }
                                     
@@ -58,8 +58,6 @@ module.exports ={
             if(err){
                 cb("error",null);
             }else{
-                console.log('zzzzzzzzzzzzzzzzzzzz')
-                console.log(data)
                 if(data.length > 0){
                     bcrypt.compare(password, data[0].password, (err, resp)=> {
                         if(err){
@@ -121,7 +119,7 @@ module.exports ={
                     }
                 })
                 cb(false,his)
-                // console.log(data);
+               
             }
         })
     }

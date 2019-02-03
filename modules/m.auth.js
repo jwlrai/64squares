@@ -20,7 +20,7 @@ module.exports ={
                         }
                         else{
                             cb(false,data)
-                            console.log(password);
+                         
                         }
                     });
                 }

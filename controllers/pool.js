@@ -76,12 +76,12 @@ router.put('/match/update',function(req,res){
         }else{
             move.moveQue = 'white';
         }
-        console.log(move);
+
         match.updateMatch(res.locals.user.data.userid,room,move,function(err,data){
             if(err){
                 res.status(403).json(err);
             }else{
-                console.log(move);
+           
                 msocket.io.to(room).emit('ongame',move)
                 res.json('sucess');
             }
@@ -121,7 +121,7 @@ router.post('/match/watch',function(req,res){
 });
 router.post('/match/forfeit',function(req,res){
     if(res.locals.user.login){
-        console.log(res.locals.user)
+      
         match.forfeit(res.locals.user.data.userid, req.body.room,function(err,data){
             if(err){
                 res.status(500).json(err);

@@ -1,0 +1,21 @@
+.pfp >div.panel-heading{
+    background-color:#0279f9 !important;
+    color:white !important;
+   
+    
+}
+.panel-default,.panel-heading{
+    border-radius: 0 !important;
+}
+.pimg{
+    width:70%;
+    border:2px solid #d1d1d1;
+    margin:0 auto;
+    border-radius: 50%;
+}
+.pname{
+    font-size:20px;
+}
+.nfm{
+    width:45%;
+}
