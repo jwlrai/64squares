@@ -6,26 +6,74 @@
 
 var app = require('../app');
 var debug = require('debug')('64squares:server');
-var http = require('http');
-
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
+var mSocket = require('../modules/m.socket');
+var match = require('../modules/m.match');
+var auth = require('../modules/m.auth');
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+// var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
 server.listen(port);
+mSocket.io = io;
+mSocket.sockets= io.sockets;
+io.sockets.on('connection', function (socket) {
+  console.log('conected');
+  socket.on('join', function (room,token,game) {
+    // autentication
+
+    auth.getIdFromToken(token, function (err, data) {
+     if(!err){
+       console.log('authenticated');
+        auth.verifySession(data.data, function (err, udata) {
+          if (!err)  { 
+            match.leaveRoom(room,udata.userid,game,function(err,rdata){
+              if(rdata!=null){
+                for(let i=0; i < rdata.length;i++){
+                  console.log('THE ROOM I LEFT'+rdata[i])
+                  socket.leave(rdata[i]);
+                }
+              }
+              
+            });           
+          }
+        })
+        socket.join(room);
+        console.log('I joined room '+room);
+      }
+      
+    });
+    //end of authentication
+   
+    
+    
+    
+    
+
+  });
+  socket.on('disconnect', function () {
+    // delete pool and make lose payer if inside game
+    match.deletePool(socket.id);
+    console.log('disconnect')
+  });
+  // socket.emit('news', { hello: 'world' });
+ 
+});
+
 server.on('error', onError);
 server.on('listening', onListening);
 
