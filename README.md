@@ -64,6 +64,6 @@ This is a MERN (MongoDb, Express, React, NodeJs) stack based application with fo
 ## ERD
 
 ```
-![](../readme/erd.png | width=300)
+![](../readme/erd.png)
 
 ```
