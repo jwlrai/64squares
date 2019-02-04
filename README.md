@@ -63,8 +63,4 @@ This is a MERN (MongoDb, Express, React, NodeJs) stack based application with fo
 
 ## ERD
 
-<img src="../readme/erd.png" width="300">
-```
-<img src="../readme/erd.png" width="300">
-
-```
+[Erd ](https://www.quora.com)
