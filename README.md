@@ -67,7 +67,27 @@ This is a MERN (MongoDb, Express, React, NodeJs) stack based application with fo
 
 ## Wireframes
 
-[ login/signup page link ](https://github.com/jwlrai/64squares/blob/master/wireframes/home%20page-login-singup.png)
-[ after login page ](https://github.com/jwlrai/64squares/blob/master/wireframes/after%20login-home%20page.png)
-[ after login watch page ](https://github.com/jwlrai/64squares/blob/master/wireframes/after%20login-%20watch%20page.png)
-[ game playing page ](https://github.com/jwlrai/64squares/blob/master/wireframes/game%20playing%20page.png)
+- [ login/signup page link ](https://github.com/jwlrai/64squares/blob/master/wireframes/home%20page-login-singup.png)
+
+- [ after login page ](https://github.com/jwlrai/64squares/blob/master/wireframes/after%20login-home%20page.png)
+
+- [ after login watch page ](https://github.com/jwlrai/64squares/blob/master/wireframes/after%20login-%20watch%20page.png)
+
+-[ game playing page ](https://github.com/jwlrai/64squares/blob/master/wireframes/game%20playing%20page.png)
+
+## Future features and improvements 
+
+- Take care of all edge cases
+
+- Rank system individual/clan
+
+- Reconnection in game
+
+- Replay most voted game and own game history
+
+- Room chatting / among audience
+
+- Profile and setting update
+
+- Creation of clan 
+
