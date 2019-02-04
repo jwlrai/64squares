@@ -63,4 +63,11 @@ This is a MERN (MongoDb, Express, React, NodeJs) stack based application with fo
 
 ## ERD
 
-[Erd ](https://www.quora.com)
+[ 64squares erd link ](https://github.com/jwlrai/64squares/blob/master/erd/erd.png)
+
+## Wireframes
+
+[ login/signup page link ](https://github.com/jwlrai/64squares/blob/master/wireframes/home%20page-login-singup.png)
+[ after login page ](https://github.com/jwlrai/64squares/blob/master/wireframes/after%20login-home%20page.png)
+[ after login watch page ](https://github.com/jwlrai/64squares/blob/master/wireframes/after%20login-%20watch%20page.png)
+[ game playing page ](https://github.com/jwlrai/64squares/blob/master/wireframes/game%20playing%20page.png)
