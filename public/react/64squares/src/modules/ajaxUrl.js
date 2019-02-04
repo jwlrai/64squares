@@ -1,4 +1,4 @@
-const BASEURL = "http://localhost:3001/";
+const BASEURL = "https://squares64.herokuapp.com/";
 
 export default {
     login : BASEURL+"user/login",
