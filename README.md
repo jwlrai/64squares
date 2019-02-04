@@ -3,7 +3,7 @@
 This application is build specially for all those chess lovers where they can play chess with each others and watch
 current on going game played by other players in this application
 To play or watch game users need to have login credentials. Once login they have access to game pool where they can join pool for searching opponent players and play games. There is also a watch page where user can watch current on going games.
-
+- [ link to the hosted app ](https://squares64.herokuapp.com)
 
 ## Technologies and framework used
 
