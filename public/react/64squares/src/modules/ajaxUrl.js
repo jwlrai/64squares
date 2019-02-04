@@ -1,15 +1,17 @@
+const BASEURL = "http://localhost:3001/";
+
 export default {
-    login : "http://localhost:3001/user/login",
-    islogin : "http://localhost:3001/user/islogin",
-    logout:"http://localhost:3001/user/logout",
-    skip:"http://localhost:3001/pool/skip",
-    signup : "http://localhost:3001/user/signup",
-    searchGame : "http://localhost:3001/pool/search",
-    joinMatch : 'http://localhost:3001/pool/match/join',
-    updateMatch:"http://localhost:3001/pool/match/update",
-    matchList: "http://localhost:3001/pool/match/list",
-    matchWatch:"http://localhost:3001/pool/match/watch",
-    makeForfeit:"http://localhost:3001/pool/match/forfeit",
-    getMatchHis:"http://localhost:3001/user/matchhistory",
+    login : BASEURL+"user/login",
+    islogin : BASEURL+"user/islogin",
+    logout:BASEURL+"user/logout",
+    skip:BASEURL+"pool/skip",
+    signup : BASEURL+"user/signup",
+    searchGame : BASEURL+"pool/search",
+    joinMatch : BASEURL+'pool/match/join',
+    updateMatch:BASEURL+"pool/match/update",
+    matchList: BASEURL+"pool/match/list",
+    matchWatch:BASEURL+"pool/match/watch",
+    makeForfeit:BASEURL+"pool/match/forfeit",
+    getMatchHis:BASEURL+"user/matchhistory",
 
 }
