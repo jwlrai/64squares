@@ -55,7 +55,7 @@ class Watch extends React.Component {
     componentDidMount(){
         let ths =this;
         if(socketObj.socket==null){
-            socketObj.socket = openSocket('http://localhost:3001');
+            socketObj.socket = openSocket('https://squares64.herokuapp.com/');
             socketObj.socket.on('pool', (message) => {
                 if (message['room']) {
                     this.ingame =true;
