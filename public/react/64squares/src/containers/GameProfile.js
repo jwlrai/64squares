@@ -20,7 +20,7 @@ class GameProfile extends React.Component {
         
         
         if(socketObj.socket==null){
-            socketObj.socket = openSocket('http://localhost:3001');
+            socketObj.socket = openSocket('https://squares64.herokuapp.com/');
             socketObj.socket.on('pool', (message) => {
                 
                 if (message['room']) {
